@@ -71,6 +71,7 @@ static NSString * const noteCell = @"noteCell";
 
 - (void)clickPublish {
     CXNoteViewController *noteVC = [[CXNoteViewController alloc] init];
+    noteVC.needUpdate = NO;
     self.navigationController.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:noteVC animated:YES];
 }
@@ -95,6 +96,15 @@ static NSString * const noteCell = @"noteCell";
     cell.note = [CXNoteModel noteModelInitWithDic:self.noteArray[indexPath.row]];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    CXNoteViewController *noteVC = [[CXNoteViewController alloc] init];
+    CXNoteModel *noteModel = [CXNoteModel noteModelInitWithDic:self.noteArray[indexPath.row]];
+    noteVC.textView.text = noteModel.diaryText;
+    noteVC.needUpdate = YES;
+    noteVC.timeStr = noteModel.time;
+    [self.navigationController pushViewController:noteVC animated:YES];
 }
 
 

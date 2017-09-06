@@ -17,4 +17,6 @@
 - (void)createSqlite;
 - (void)addDiaryWithText:(NSString *)diaryText imageUrl:(NSString *)imageUrl;
 - (NSArray<NSDictionary *> *)getAllNotes;
+- (void)updateDiaryWithOldTime:(NSString *)oldTime newText:(NSString *)newDiaryText newImageUrl:(NSString *)newImageUrl;
+- (void)deleteDiaryWithTime:(NSString *)timeStr;
 @end

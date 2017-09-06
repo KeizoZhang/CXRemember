@@ -10,4 +10,8 @@
 
 @interface CXNoteViewController : UIViewController
 
+@property (nonatomic, strong) UITextView * textView;
+@property (nonatomic, copy) NSString * timeStr;
+@property (nonatomic, assign) BOOL needUpdate;
+
 @end

@@ -10,7 +10,7 @@
 #import "FMDBManager.h"
 
 @interface CXNoteViewController ()
-@property (nonatomic, strong) UITextView * textView;
+
 @end
 
 @implementation CXNoteViewController
@@ -69,11 +69,16 @@
 
 - (void)saveBtnClick {
     
-    if (self.textView.text.length == 0) {
-        
+    if (self.textView.text.length) {
+        if (self.needUpdate) {
+            [[FMDBManager sharedInstance] updateDiaryWithOldTime:self.timeStr newText:self.textView.text newImageUrl:nil];
+        } else {
+            [[FMDBManager sharedInstance] addDiaryWithText:self.textView.text imageUrl:nil];
+        }
+    } else {
+        [[FMDBManager sharedInstance] deleteDiaryWithTime:self.timeStr];
     }
     
-    [[FMDBManager sharedInstance] addDiaryWithText:self.textView.text imageUrl:nil];
     
     [self.navigationController popViewControllerAnimated:YES];
     
