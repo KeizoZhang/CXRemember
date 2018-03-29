@@ -13,6 +13,7 @@
 @property (nonatomic, strong) NSString *time;
 @property (nonatomic, strong) NSString *imageUrl;
 @property (nonatomic, strong) NSString *diaryText;
+@property (nonatomic, assign) NSInteger noteId;
 
 
 + (instancetype)noteModelInitWithDic:(NSDictionary *)dic;

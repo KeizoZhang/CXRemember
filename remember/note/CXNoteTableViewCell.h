@@ -2,7 +2,7 @@
 //  CXNoteTableViewCell.h
 //  remember
 //
-//  Created by Apple on 2017/5/20.
+//  Created by Keizo on 2017/9/7.
 //  Copyright © 2017年 CX. All rights reserved.
 //
 

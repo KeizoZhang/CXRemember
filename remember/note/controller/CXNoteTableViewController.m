@@ -30,7 +30,8 @@ static NSString * const noteCell = @"noteCell";
     [[FMDBManager sharedInstance] createSqlite];
     
     //注册cell
-    [self.tableView registerClass:[CXNoteTableViewCell class] forCellReuseIdentifier:noteCell];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([CXNoteTableViewCell class]) bundle:nil] forCellReuseIdentifier:noteCell];
+//    [self.tableView registerClass:[CXNoteTableViewCell class] forCellReuseIdentifier:noteCell];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshViews) name:CXSaveNoteNotification object:nil];
 }
@@ -90,10 +91,19 @@ static NSString * const noteCell = @"noteCell";
     return self.noteArray.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 160;
+}
 
 - (CXNoteTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CXNoteTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:noteCell forIndexPath:indexPath];
     cell.note = [CXNoteModel noteModelInitWithDic:self.noteArray[indexPath.row]];
+    
+    if (cell == nil) {
+        NSArray *nibs = [[NSBundle mainBundle] loadNibNamed:@"CXNoteTableViewCell" owner:nil options:nil];
+        cell = [nibs lastObject];
+        cell.backgroundColor = [UIColor clearColor];
+    }
     
     return cell;
 }

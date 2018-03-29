@@ -26,9 +26,6 @@ static NSCalendar *calendar_;
 - (instancetype)initWithDic:(NSDictionary *)dic {
     if (self = [super init]) {
         [self setValuesForKeysWithDictionary:dic];
-//        self.diaryText = dic[@"diaryText"];
-//        self.time = dic[@"time"];
-//        self.imageUrl = dic[@"imageUrl"];
     }
     return self;
 }

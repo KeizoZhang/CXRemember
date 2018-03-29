@@ -22,7 +22,6 @@
 		1896D8E91EBF616900B2A66F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1896D8E81EBF616900B2A66F /* Assets.xcassets */; };
 		18C477661ED06508004DAFED /* CXNoteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C477651ED06508004DAFED /* CXNoteTableViewController.m */; };
 		18C477691ED06758004DAFED /* CXDateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C477681ED06758004DAFED /* CXDateTableViewController.m */; };
-		18C4776C1ED07275004DAFED /* CXNoteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4776B1ED07275004DAFED /* CXNoteTableViewCell.m */; };
 		18D18E4B1F232934002C9231 /* CXNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D18E4A1F232934002C9231 /* CXNoteModel.m */; };
 		18DAF8961F25819000B453D3 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DAF8951F25819000B453D3 /* NSDate+Extension.m */; };
 		18F43C2F1F134C98006087C3 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F43C2E1F134C98006087C3 /* UIView+Extension.m */; };
@@ -30,6 +29,8 @@
 		18FA8F1A1F0DD0FC00A01FB6 /* CXQuickFuncBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA8F191F0DD0FC00A01FB6 /* CXQuickFuncBox.m */; };
 		2C483D67C6713DF8130570D3 /* libPods-remember.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29AE851C2DB63A16F27273 /* libPods-remember.a */; };
 		C682F2671F4E71990062F64D /* CXConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C682F2661F4E71990062F64D /* CXConst.m */; };
+		C6D618E61F61443300AC00D3 /* CXNoteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D618E41F61443300AC00D3 /* CXNoteTableViewCell.m */; };
+		C6D618E71F61443300AC00D3 /* CXNoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6D618E51F61443300AC00D3 /* CXNoteTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,8 +85,6 @@
 		18C477651ED06508004DAFED /* CXNoteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXNoteTableViewController.m; sourceTree = "<group>"; };
 		18C477671ED06758004DAFED /* CXDateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXDateTableViewController.h; sourceTree = "<group>"; };
 		18C477681ED06758004DAFED /* CXDateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXDateTableViewController.m; sourceTree = "<group>"; };
-		18C4776A1ED07275004DAFED /* CXNoteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXNoteTableViewCell.h; path = ../model/CXNoteTableViewCell.h; sourceTree = "<group>"; };
-		18C4776B1ED07275004DAFED /* CXNoteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CXNoteTableViewCell.m; path = ../model/CXNoteTableViewCell.m; sourceTree = "<group>"; };
 		18D18E491F232934002C9231 /* CXNoteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXNoteModel.h; sourceTree = "<group>"; };
 		18D18E4A1F232934002C9231 /* CXNoteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXNoteModel.m; sourceTree = "<group>"; };
 		18DAF8941F25819000B453D3 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
@@ -100,6 +99,9 @@
 		6E29AE851C2DB63A16F27273 /* libPods-remember.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-remember.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C682F2651F4E71990062F64D /* CXConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXConst.h; sourceTree = "<group>"; };
 		C682F2661F4E71990062F64D /* CXConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXConst.m; sourceTree = "<group>"; };
+		C6D618E31F61443300AC00D3 /* CXNoteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXNoteTableViewCell.h; sourceTree = "<group>"; };
+		C6D618E41F61443300AC00D3 /* CXNoteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXNoteTableViewCell.m; sourceTree = "<group>"; };
+		C6D618E51F61443300AC00D3 /* CXNoteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CXNoteTableViewCell.xib; sourceTree = "<group>"; };
 		EDDE26F68B53EA2D273A33D0 /* Pods-remember.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remember.release.xcconfig"; path = "Pods/Target Support Files/Pods-remember/Pods-remember.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -259,7 +261,7 @@
 			children = (
 				18C4775D1ED064B4004DAFED /* controller */,
 				18C4775E1ED064B4004DAFED /* model */,
-				18C4775F1ED064B4004DAFED /* view */,
+				C6D618DF1F61416C00AC00D3 /* view */,
 			);
 			path = note;
 			sourceTree = "<group>";
@@ -282,15 +284,6 @@
 				18D18E4A1F232934002C9231 /* CXNoteModel.m */,
 			);
 			path = model;
-			sourceTree = "<group>";
-		};
-		18C4775F1ED064B4004DAFED /* view */ = {
-			isa = PBXGroup;
-			children = (
-				18C4776A1ED07275004DAFED /* CXNoteTableViewCell.h */,
-				18C4776B1ED07275004DAFED /* CXNoteTableViewCell.m */,
-			);
-			path = view;
 			sourceTree = "<group>";
 		};
 		18C477601ED064B4004DAFED /* date */ = {
@@ -353,6 +346,16 @@
 				EDDE26F68B53EA2D273A33D0 /* Pods-remember.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C6D618DF1F61416C00AC00D3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C6D618E31F61443300AC00D3 /* CXNoteTableViewCell.h */,
+				C6D618E41F61443300AC00D3 /* CXNoteTableViewCell.m */,
+				C6D618E51F61443300AC00D3 /* CXNoteTableViewCell.xib */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,6 +471,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6D618E71F61443300AC00D3 /* CXNoteTableViewCell.xib in Resources */,
 				1896D8E91EBF616900B2A66F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,9 +566,9 @@
 				188651B31F0CC40900281F67 /* FMDatabaseQueue.m in Sources */,
 				18F43C2F1F134C98006087C3 /* UIView+Extension.m in Sources */,
 				18C477661ED06508004DAFED /* CXNoteTableViewController.m in Sources */,
-				18C4776C1ED07275004DAFED /* CXNoteTableViewCell.m in Sources */,
 				1851A2F81EFFC3BE007E7233 /* main.m in Sources */,
 				C682F2671F4E71990062F64D /* CXConst.m in Sources */,
+				C6D618E61F61443300AC00D3 /* CXNoteTableViewCell.m in Sources */,
 				1851A2F71EFFC3BE007E7233 /* AppDelegate.m in Sources */,
 				1894915D1F1EE1FA00CD85B7 /* PAirSandbox.m in Sources */,
 			);
@@ -696,7 +700,7 @@
 				DEVELOPMENT_TEAM = CWHF3DKQ7M;
 				GCC_PREFIX_HEADER = "$(SRCROOT)//remember/other/PrefixHeader.pch";
 				INFOPLIST_FILE = remember/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CX.remember;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -711,7 +715,7 @@
 				DEVELOPMENT_TEAM = CWHF3DKQ7M;
 				GCC_PREFIX_HEADER = "$(SRCROOT)//remember/other/PrefixHeader.pch";
 				INFOPLIST_FILE = remember/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CX.remember;
 				PRODUCT_NAME = "$(TARGET_NAME)";
